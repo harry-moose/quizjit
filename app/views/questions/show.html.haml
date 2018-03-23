@@ -1,0 +1,13 @@
+%h1= @question.question
+%p= @question.opt1
+%p= @question.opt2
+%p= @question.opt3
+%p= @question.opt4
+
+%p= @question.answer
+
+%p
+Submitted by 
+= @question.user.email
+
+= link_to "Back", root_path
